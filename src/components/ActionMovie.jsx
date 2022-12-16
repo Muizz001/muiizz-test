@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 const ActionMovie = () => {
   const [actionMovie, setActionMovie] = useState()
   useEffect(() => {
-    fetch('http://www.omdbapi.com/?t=top%20gun%20maverick&apikey=3b72366a')
+    fetch('https://www.omdbapi.com/?t=top%20gun%20maverick&apikey=3b72366a')
     .then(response => response.json())
     .then(response => setActionMovie(response))
     .catch(err => console.error(err));
