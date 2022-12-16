@@ -5,7 +5,7 @@ const searchResults = () => {
     const search = useParams()
     const [movie, setMovie] = useState()
     useEffect(() => {
-        fetch(`http://www.omdbapi.com/?t=${search.search}&apikey=3b72366a`)
+        fetch(`https://www.omdbapi.com/?t=${search.search}&apikey=3b72366a`)
             .then(response => response.json())
             .then(response => setMovie(response))
             .catch(err => console.error(err));
